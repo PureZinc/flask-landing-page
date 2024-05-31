@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template1.css') }}">
+</head>
+<body>
+    <section>
+        <h1>What Makes Copywriting Sell?!</h1>
+        <p>Hint: You probably know it already by intuition!</p>
+        <a href="#" class="btn">Find Out Now!</a>
+    </section>
+    <section id="about">
+        <h3>Never Let a Good Opportunity go to Waste!</h3>
+        <p>Copywriting is everywhere around you: In the articles that you read to the videos that you watch!</p>
+        <p>It's more than just a "money-making tool" that could make you "10K a month" if you buy our course!</p>
+        <p>By a lot more, we mean "Turn your words into action" and "Make your boring love-life go sexual" more!</p>
+    </section>
+    <section>
+        <h2>Features</h2>
+        <div id="features">
+            <div class="feature">
+                <h3>Feature 1</h3>
+                <p>Detail about feature 1.</p>
+            </div>
+            <div class="feature">
+                <h3>Feature 2</h3>
+                <p>Detail about feature 2.</p>
+            </div>
+        </div>
+    </section>    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/contact" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 The SuperMarket. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
