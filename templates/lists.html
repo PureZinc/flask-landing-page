@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lists.css') }}">
 </head>
 <body>
-    <h1>Here's a list of my Landing Pages</h1>
+    <h1>Welcome to my Landing Page Portfolio!</h1>
+    <h3>Here's a list of my Landing Pages</h3>
     {% for page in pages %}
         <a href="{{ url_for('landing_page', template=page.template) }}">{{page.name}}</a>
     {% endfor %}
