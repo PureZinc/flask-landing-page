@@ -19,19 +19,12 @@ body {
   padding: 20px;
 }
 
-h1 {
+h1, h2, h3 {
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
   color: $primary-color;
 }
-
-h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: $primary-color;
-  }
 
 a {
   display: block;

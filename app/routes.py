@@ -4,12 +4,17 @@ from .email import send_contact_message
 
 templates = {
     '1': 'template1.html',
+    '2': 'template2.html'
 }
 
 landing_pages = [
     {
-        'name': 'the_SuperMarket',
+        'name': 'The Supermarket',
         'template': '1'
+    },
+    {
+        'name': 'Digital Agents',
+        'template': '2'
     },
 ]
 

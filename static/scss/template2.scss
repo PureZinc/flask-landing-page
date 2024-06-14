@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Colors */
+$primary-color: #6072ff;
+$text-color: #2b00ff;
+
+
+/* Mixins */
+@mixin flex-display($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: $primary-color;
+}
+
+nav {
+    @include flex-display(row);
+    justify-content: space-between;
+
+    .nav-header {
+        h1 {
+            font-size: x-large;
+        }
+    }
+    .nav-links {
+        @include flex-display(row);
+
+        li a {
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+}
