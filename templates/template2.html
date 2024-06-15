@@ -15,30 +15,35 @@
         <div class="nav-header">
             <h3 class="nav-logo">Digital Agents</h3>
         </div>
-        <ul class="nav-links">
+        <div class="menu" id="nav-menu">
+            <i class="ri-menu-line"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#"></a>Home</li>
             <li><a href="#"></a>Blog</li>
             <li><a href="#"></a>Shop</li>
         </ul>
-        <div class="menu">
-            <i class="ri-menu-line"></i>
-        </div>
     </nav>
-    <main>
-        <div class="context">
+    <main class="main-container">
+        <div class="main-content">
             <h1>Turn Digital Creations into Reality!</h1>
-            <p>We help startup companies with their products!</p>
-            <button class="landing">Learn More Now!</button>
+            <p>
+                We turn ideas into startup companies! Our team is 
+                dedicated towards building the best foundation and 
+                expanding the realms of your business needs!
+            </p>
+            <button class="landing-btn">Learn More Now!</button>
         </div>
         <img src="{{ url_for('static', filename='images/Computer.png') }}" alt="Image" class="main-img">
     </main>
     <footer>
         <p>Galupi Landing Pages 2024 | All Rights Reserved</p>
-        <ul class="footer-links">
+        <ul class="social-links">
             <li><a href="#"></a>Facebook</li>
             <li><a href="#"></a>Twitter</li>
             <li><a href="#"></a>Instagram</li>
         </ul>
     </footer>
 </body>
+<script src="{{ url_for('static', filename='js/template2.js') }}"></script>
 </html>
