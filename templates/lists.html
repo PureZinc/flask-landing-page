@@ -8,9 +8,9 @@
 <body>
     <h1>Hi! My name is Nicholas Galupi</h1>
     <h2>Welcome to my Landing Page Portfolio!</h2>
-    <h3>Here's a list of my Landing Pages</h3>
-    {% for page in pages %}
-        <a href="{{ url_for('landing_page', template=page.template) }}">{{page.name}}</a>
+    <h3>Here's a list of my Single-Page Applications!</h3>
+    {% for slug, page in landing_pages %}
+        <a href="{{ url_for('landing_page', slug=slug) }}">{{page.name}}</a>
     {% endfor %}
 </body>
 </html>

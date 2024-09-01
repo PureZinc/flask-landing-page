@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/template3/default.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/template3/styles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/template3/responsive.css') }}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7553ba3b1a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img width="80" height="50" src="{{ url_for('static', filename='images/template3/project_logo/logo.svg') }}" alt="Front">
+            </div>
+            <div class="nav-bars" aria-expanded="false">
+                <span>☰</span>
+            </div>
+            <ul>
+                <li><a class="on-page" href="#">Home</a></li>
+                <li><a href="#benefits">Features</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#hire-us">Hire Us</a></li>
+                <li><button class="btn">Buy Now</button></li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="container">
+                <div class="block-text">
+                    <h1>Empowering Teams with the freedom</h1>
+                    <p>Own the unlimited power of web development</p>
+                    <div class="button-class">
+                        <button class="btn"><span><i class="fa-solid fa-circle-play"></i></span> Play Video</button>
+                        <a href="#" class="learn-more">Learn More ></a>
+                    </div>
+                </div>
+                <div class="logo-bubbles">
+                    <div class="logo logo-google">
+                        <img src="{{ url_for('static', filename='images/template3/logo_icons/google.png') }}" alt="Google">
+                    </div>
+                    <div class="logo logo-asana">
+                        <img src="{{ url_for('static', filename='images/template3/logo_icons/asana.png') }}" alt="Asana">
+                    </div>
+                    <div class="logo logo-atlassian">
+                        <img src="{{ url_for('static', filename='images/template3/logo_icons/atlassian.png') }}" alt="Atlassian">
+                    </div>
+                    <div class="logo logo-calendar">
+                        <img src="{{ url_for('static', filename='images/template3/logo_icons/calendar.png') }}" alt="Calendar">
+                    </div>
+                    <div class="logo logo-google-a">
+                        <img src="{{ url_for('static', filename='images/template3/logo_icons/google-A.png') }}" alt="GoogleA">
+                    </div>
+                    <div class="logo logo-paypal">
+                        <img src="{{ url_for('static', filename='images/template3/logo_icons/paypal.jpg') }}" alt="Paypal">
+                    </div>
+                    <div class="logo logo-weave">
+                        <img src="{{ url_for('static', filename='images/template3/logo_icons/weave.png') }}" alt="Weave">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="benefits">
+            <div class="container">
+                <div class="block-text">
+                    <h2>Key benefits</h2>
+                    <p>Design faster with a growing array of beautiful templates</p>
+                </div>
+                <div class="benefits-card-layout">
+                    <div class="benefits-card">
+                        <img width="50" height="50" src="{{ url_for('static', filename='images/template3/icons/responsive.svg') }}" alt="Responsive">
+                        <h4>Responsive</h4>
+                        <p>
+                            It's a long established fact that a reader will be distracted by the readable 
+                            content of the page when looking at its layout.
+                        </p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="benefits-card">
+                        <img width="50" height="50" src="{{ url_for('static', filename='images/template3/icons/customizable.svg') }}" alt="Customizable">
+                        <h4>Customizable</h4>
+                        <p>
+                            It's a long established fact that a reader will be distracted by the readable 
+                            content of the page when looking at its layout.
+                        </p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="benefits-card">
+                        <img width="50" height="50" src="{{ url_for('static', filename='images/template3/icons/premium.svg') }}" alt="Premium">
+                        <h4>Premium  <span class="sketch">sketch</span></h4>
+                        <p>
+                            It's a long established fact that a reader will be distracted by the readable 
+                            content of the page when looking at its layout.
+                        </p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="benefits-card">
+                        <img width="50" height="50" src="{{ url_for('static', filename='images/template3/icons/documentation.svg') }}" alt="Documentation">
+                        <h4>Documentation</h4>
+                        <p>
+                            It's a long established fact that a reader will be distracted by the readable 
+                            content of the page when looking at its layout.
+                        </p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="perspective">
+            <div class="container">
+                <div class="block-text">
+                    <h2>Front makes you look at things from a different perspective</h2>
+                    <button class="btn"><span><i class="fa-solid fa-circle-play"></i></span> Play Video</button>
+                </div>
+                <div>
+                    <img src="{{ url_for('static', filename='images/template3/banners/banner_one.jpg') }}" alt="Banner">
+                </div>
+            </div>
+        </section>
+
+        <section id="learn">
+            <div class="container">
+                <div class="block-text">
+                    <h2>Why front?</h2>
+                    <p>
+                        Front is an incredibly beautiful, fully responsive, and mobile-first projects on <br>
+                        the web - it is the starting point for creative sites
+                    </p>
+                </div>
+                <div class="connected-dots">
+                    <div>
+                        <div class="dotting-point">
+                            <div class="blue-dot-inside"></div>
+                        </div>
+                        <p>Basic elements</p>
+                    </div>
+                    <div>
+                        <div class="dotting-point">
+                            <div class="blue-dot-inside"></div>
+                        </div>
+                        <p>Components</p>
+                    </div>
+                    <div>
+                        <div class="dotting-point">
+                            <div class="blue-dot-inside"></div>
+                        </div>
+                        <p>Combined components</p>
+                    </div>
+                    <div>
+                        <div class="dotting-point">
+                            <div class="blue-dot-inside"></div>
+                        </div>
+                        <p>Page layouts</p>
+                    </div>
+                </div>
+                <div class="play-banner">
+                    <img src="{{ url_for('static', filename='images/template3/banners/banner_two.jpg') }}" alt="Banner Two">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <div class="testimonial-img">
+                    <img src="{{ url_for('static', filename='images/template3/people/woman_three.jpg') }}" alt="Christina Kray" class="pfp">
+                    <img src="{{ url_for('static', filename='images/template3/abstract/dots.svg') }}" alt="Dots" class="dots">
+                </div>
+                <div class="testimonial-block-text">
+                    <img src="{{ url_for('static', filename='images/template3/company_logos/hubspot.svg') }}" alt="HubSpot">
+                    <p>
+                        This template is really nice and offers quite a large set of options. It's 
+                        beautiful and the coding is done quickly and seaminglessly. Thank you!
+                    </p>
+                    <div class="test-details">
+                        <h4>Christina Kray</h4>
+                        <h6>Executive Director</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trusted-brands">
+            <div class="container">
+                <h3>Trusted by world's best</h3>
+                <div class="brands">
+                    <img width="80" height="50" src="{{ url_for('static', filename='images/template3/company_logos/weebly.svg') }}" alt="Weebly">
+                    <img width="80" height="50" src="{{ url_for('static', filename='images/template3/company_logos/uber.svg') }}" alt="Uber">
+                    <img width="80" height="50" src="{{ url_for('static', filename='images/template3/company_logos/slack.svg') }}" alt="Slack">
+                    <img width="80" height="50" src="{{ url_for('static', filename='images/template3/company_logos/airbnb.svg') }}" alt="AirBNB">
+                    <img width="80" height="50" src="{{ url_for('static', filename='images/template3/company_logos/slack.svg') }}" alt="Slack">
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <div class="block-text">
+                    <h2>Pricing</h2>
+                    <p>No additional costs. Pay for what you use</p>
+                </div>
+                <div class="payment-section">
+                    <div class="main-payment">
+                        <div class="main-payment-card">
+                            <div class="payment-details">
+                                <p><span class="price-number">59</span> / mo</p>
+                                <hr>
+                                <p>Start your front business now! 100% guaranteed money back. No questions asked.</p>    
+                            </div>
+                            <div class="cta">
+                                <button class="btn"><span><i class="fa-solid fa-circle-play"></i></span> Play Video</button>
+                                <h6>No credit card required.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-perks">
+                        <div class="perk">
+                            <img width="40" height="40" src="{{ url_for('static', filename='images/template3/icons/components.svg') }}" alt="Components">
+                            <h4>Hundreds of components</h4>
+                            <p>Achieve maximum productivity with minimum effort with Front and create robust Limitless products.</p>
+                        </div>
+                        <div class="perk">
+                            <img width="40" height="40" src="{{ url_for('static', filename='images/template3/icons/images.svg') }}" alt="Images">
+                            <h4>Images included</h4>
+                            <p>Images included. We made custom licenses for all our premium images in the front.</p>
+                        </div>
+                        <div class="perk">
+                            <img width="40" height="40" src="{{ url_for('static', filename='images/template3/icons/cancel.svg') }}" alt="Cancel">
+                            <h4>Cancel anytime <span class="sketch">sketch</span></h4>
+                            <p>If its not for you, just cancel, no hidden costs or fees.</p>
+                        </div>
+                        <div class="perk">
+                            <img width="40" height="40" src="{{ url_for('static', filename='images/template3/icons/moneyback.svg') }}" alt="Moneyback">
+                            <h4>Hundreds of Components</h4>
+                            <p>100% guaranteed money back. No questions asked.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hire-us">
+            <div class="container">
+                <div class="hire-us-details">
+                    <div class="intro">
+                        <h2>Hire Us</h2>
+                        <p>Whatever your goal - we will get you there</p>
+                        <hr>
+                    </div>
+                    <p><em>"I love front! I love the ease of use, I love the fact that I have total creative freedom..."</em></p>
+                    <div class="test-details">
+                        <h4>Charlotte Moore</h4>
+                        <h6>Head of Commercials, Slack</h6>
+                    </div>
+                    <div class="people">
+                        <img height="25" width="25" src="{{ url_for('static', filename='images/template3/people/woman_one.jpg') }}" alt="Woman 1">
+                        <img height="25" width="25" src="{{ url_for('static', filename='images/template3/people/woman_two.jpg') }}" alt="Woman 2">
+                        <img height="35" width="35" src="{{ url_for('static', filename='images/template3/people/man_one.jpg') }}" alt="Man 1">
+                    </div>
+                </div>
+                <form class="hire-form" action="#">
+                    <h5>Fill out the form, and we'll be in touch as soon as possible</h5>
+                    <div class="form-inputs">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <select name="Budget" id="budget">
+                            <option value="Budget">Budget</option>
+                        </select>
+                        <select name="Country" id="country">
+                            <option value="Country">Country</option>
+                        </select>
+                        <textarea name="" placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
+                        <label for="marketing-emails-check">
+                            <input type="checkbox"> Yes, I'd like to receive occasional marketing emails from Front. I have 
+                            the right to opt out at any time.
+                        </label>
+                        <a href="#">View privacy policy.</a>
+                        <a href="#">View privacy policy.</a>
+                        <div class="form-submit">
+                            <button type="submit" class="btn">Get Started</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <div class="main-footer-details">
+                    <div class="footer-detail main">
+                        <img width="80" height="50" src="./assets/project_logo/logo.svg" alt="Front">
+                        <p>153 Williamson Plaza, Maggieberg</p>
+                        <p class="main-text">+1 (062) 109-9222</p>
+                    </div>
+                    <div class="footer-detail">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Career <span class="were-hiring">We're Hiring</span></a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <li><a href="#">Hire Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-detail">
+                        <h3>Features</h3>
+                        <ul>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Release Notes</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Pricing</a></li>                        
+                        </ul>
+                    </div>
+                    <div class="footer-detail">
+                        <h3>Documentation</h3>
+                        <ul>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Docs</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Tech Requirements</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-detail">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Your Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-extras">
+                    <p>Privacy & Policy > <span class="main-text">Terms</span> > Site Map</p>
+                    <div class="social-icons">
+                        <div class="footer-icon">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="footer-icon">
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                        </div>
+                        <div class="footer-icon">
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                        <div class="footer-icon">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="footer-icon country">
+                            <select name="United States">
+                                <option value="USA">&#127482; United States</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Front. 2022 Responsive designs. All rights reserved.</p>
+                <p>
+                    When you visit or interact with our sites, services or tools, we or our authorized service providers may <br>
+                    use cookies for storing information to help provide you with a better, faster and safer experience and <br>
+                    for marketing purposes.
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            document.querySelector('.nav-bars').addEventListener('click', function() {
+                let expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !expanded);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        position: fixed;
+        width: 100vw; 
+        height: 100vh; 
+        top: 0; 
+        left: 0;
+        text-align: center;
+        font-size: 30px;
+        display: none;
+    }
+
+    .navbar ul button {
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    .nav-bars {
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .nav-bars[aria-expanded="true"] + ul {
+        display: flex;
+    }
+    
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .block-text {
+        text-align: center;
+    }
+
+    .testimonial .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-block-text img {
+        margin: 0 auto;
+    }
+
+    .payment-section {
+        flex-direction: column;
+    }
+
+    .main-payment-card {
+        text-align: center;
+    }
+
+    .payment-perks  {
+        padding: 0 50px;
+    }
+
+    #hire-us .container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hire-us-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+        padding: 40px;
+    }
+
+    .hire-us-details .intro {
+        max-width: 250px;
+    }
+
+    .main-footer-details {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .footer-detail.main {grid-row: span 2;}
+}
+
+@media (max-width: 538px) {
+    .logo-bubbles {
+        width: 100%;
+    }
+
+    .perspective .container {
+        flex-direction: column;
+    }
+
+    .connected-dots {
+        flex-direction: column;
+    }
+
+    .connected-dots > div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .trusted-brands .brands {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .payment-perks {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .hire-us-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 5px;
+        text-align: center;
+    }
+
+    .hire-us-details .intro {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .main-footer-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        text-align: center;
+    }
+
+    .footer-detail.main {grid-row: 1;}
+
+    .footer-extras {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .footer-icon.country {
+        grid-column: span 4;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
