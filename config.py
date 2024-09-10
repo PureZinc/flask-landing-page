@@ -2,7 +2,7 @@
 import os
 
 config = {
-    'SECRET_KEY': '<your secret key>',
+    'SECRET_KEY': os.urandom(24),
 
     # Database Settings
     'SQLALCHEMY_DATABASE_URI': 'sqlite:///contacts.db',
@@ -20,6 +20,11 @@ prod_config = {
 
     # Database Settings
     'SQLALCHEMY_DATABASE_URI': 'sqlite:///contacts.db',
+
+    # Cookies Settings
+    'SESSION_COOKIE_HTTPONLY': True,  # Prevent JS access to cookies
+    'SESSION_COOKIE_SECURE': True,    # Ensure cookies are sent only over HTTPS
+    'SESSION_COOKIE_SAMESITE': 'Lax',
 
     # Email Settings
     'MAIL_SERVER': 'smtp.gmail.com',
